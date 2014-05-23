@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarOfWords", "WarOfWords\WarOfWords.csproj", "{C3510942-C37B-4B71-97B0-42FB54719C78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarOfWordsLibrary", "WarOfWordsLibrary\WarOfWordsLibrary.csproj", "{7C53BC72-3258-4DCA-8DE6-C99CDDF22C82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarOfWordsLoader", "WarOfWordsLoader\WarOfWordsLoader.csproj", "{89CAE089-769B-43ED-AC49-6263884D5661}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C3510942-C37B-4B71-97B0-42FB54719C78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3510942-C37B-4B71-97B0-42FB54719C78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3510942-C37B-4B71-97B0-42FB54719C78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3510942-C37B-4B71-97B0-42FB54719C78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C53BC72-3258-4DCA-8DE6-C99CDDF22C82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C53BC72-3258-4DCA-8DE6-C99CDDF22C82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C53BC72-3258-4DCA-8DE6-C99CDDF22C82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C53BC72-3258-4DCA-8DE6-C99CDDF22C82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89CAE089-769B-43ED-AC49-6263884D5661}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89CAE089-769B-43ED-AC49-6263884D5661}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89CAE089-769B-43ED-AC49-6263884D5661}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89CAE089-769B-43ED-AC49-6263884D5661}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,56 @@
+﻿namespace WarOfWordsLibrary.Controls.Controls
+{
+    partial class GridControlPlus
+    {
+        /// <summary> 
+        /// 必需的设计器变量。
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary> 
+        /// 清理所有正在使用的资源。
+        /// </summary>
+        /// <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region 组件设计器生成的代码
+
+        /// <summary> 
+        /// 设计器支持所需的方法 - 不要
+        /// 使用代码编辑器修改此方法的内容。
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // gridView1
+            // 
+            this.gridView1.GridControl = this;
+            this.gridView1.Name = "gridView1";
+            // 
+            // GridControlPlus
+            // 
+            this.MainView = this.gridView1;
+            this.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView1});
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+    }
+}

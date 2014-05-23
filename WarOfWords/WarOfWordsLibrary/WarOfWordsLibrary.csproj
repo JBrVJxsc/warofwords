@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7C53BC72-3258-4DCA-8DE6-C99CDDF22C82}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WarOfWordsLibrary</RootNamespace>
+    <AssemblyName>WarOfWordsLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\lib\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>..\..\..\Program Files (x86)\System.Data.SQLite\2012\bin\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Constants\MESSAGE.cs" />
+    <Compile Include="Classes\Constants\SQL.cs" />
+    <Compile Include="Classes\Engines\DictionaryEngine.cs" />
+    <Compile Include="Classes\Filters\BaseFilter.cs" />
+    <Compile Include="Classes\Filters\Filter.cs" />
+    <Compile Include="Classes\Filters\Filter4.cs" />
+    <Compile Include="Classes\Filters\Filter5.cs" />
+    <Compile Include="Classes\Filters\Filter6.cs" />
+    <Compile Include="Classes\Filters\Filter7.cs" />
+    <Compile Include="Classes\Filters\Filter8.cs" />
+    <Compile Include="Classes\Filters\Filter1.cs" />
+    <Compile Include="Classes\Filters\Filter2.cs" />
+    <Compile Include="Classes\Filters\Filter3.cs" />
+    <Compile Include="Classes\Interfaces\IFilter.cs" />
+    <Compile Include="Classes\Interfaces\ISetting.cs" />
+    <Compile Include="Classes\Managers\ReflectionManager.cs" />
+    <Compile Include="Classes\Managers\DataBaseManager.cs" />
+    <Compile Include="Classes\Managers\SettingManager.cs" />
+    <Compile Include="Classes\Objects\FilterElement.cs" />
+    <Compile Include="Classes\Objects\QueryHistory.cs" />
+    <Compile Include="Classes\Objects\Settings\SingleFilterSetting.cs" />
+    <Compile Include="Classes\Objects\Settings\SingleFilterSettingList.cs" />
+    <Compile Include="Classes\Objects\Word.cs" />
+    <Compile Include="Classes\Settings\CopySetting.cs" />
+    <Compile Include="Classes\Settings\FilterSetting.cs" />
+    <Compile Include="Classes\Settings\QueryHistorySetting.cs" />
+    <Compile Include="Controls\Controls\ComboBoxEditPlus.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Controls\ComboBoxEditPlus.Designer.cs">
+      <DependentUpon>ComboBoxEditPlus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Controls\GridControlPlus.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Controls\GridControlPlus.Designer.cs">
+      <DependentUpon>GridControlPlus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Controls\GridViewPlus.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Controls\GridViewPlus.Designer.cs">
+      <DependentUpon>GridViewPlus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Controls\RepositoryItemCheckEditPlus.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Controls\RepositoryItemCheckEditPlus.Designer.cs">
+      <DependentUpon>RepositoryItemCheckEditPlus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Controls\RepositoryItemSpinEditPlus.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Controls\RepositoryItemSpinEditPlus.Designer.cs">
+      <DependentUpon>RepositoryItemSpinEditPlus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Controls\RepositoryItemTrackBarPlus.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Controls\RepositoryItemTrackBarPlus.Designer.cs">
+      <DependentUpon>RepositoryItemTrackBarPlus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Controls\RepositoryItemZoomTrackBarPlus.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Controls\RepositoryItemZoomTrackBarPlus.Designer.cs">
+      <DependentUpon>RepositoryItemZoomTrackBarPlus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Forms\BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Forms\BaseForm.Designer.cs">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Forms\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Forms\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enums\TypeOfType.cs" />
+    <Compile Include="Program.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Controls\Controls\ComboBoxEditPlus.resx">
+      <DependentUpon>ComboBoxEditPlus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Controls\GridControlPlus.resx">
+      <DependentUpon>GridControlPlus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Controls\RepositoryItemCheckEditPlus.resx">
+      <DependentUpon>RepositoryItemCheckEditPlus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Controls\RepositoryItemSpinEditPlus.resx">
+      <DependentUpon>RepositoryItemSpinEditPlus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Controls\RepositoryItemZoomTrackBarPlus.resx">
+      <DependentUpon>RepositoryItemZoomTrackBarPlus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Forms\BaseForm.resx">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Forms\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\WarOfWordsLoader\WarOfWordsLoader.csproj">
+      <Project>{89cae089-769b-43ed-ac49-6263884d5661}</Project>
+      <Name>WarOfWordsLoader</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Configuration.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Email.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Print.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Query.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wordbook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Synchronize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fixed.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
